@@ -82,7 +82,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\scripts\Sketch.cs" />
-    <Compile Include="Assets\scripts\WaterPollutionReading.cs" />
+    <Compile Include="Assets\scripts\TreeSurvey.cs" />
     <Compile Include="Assets\scripts\WebRequest.cs" />
   </ItemGroup>
   <ItemGroup>

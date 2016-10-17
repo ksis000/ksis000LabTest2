@@ -1474,7 +1474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nText: {fileID: 102000012849063330, guid: b607e11f9c141754dba3b77ef059361a, type: 2}
   Sphere: {fileID: 1000013789057222, guid: b607e11f9c141754dba3b77ef059361a, type: 2}
-  _WebsiteURL: http://ksis000lab2.azurewebsites.net/tables/WaterPollutionReading?zumo-api-version=2.0.0
+  _WebsiteURL: http://ksis000lab2.azurewebsites.net/tables/TreeSurvey?zumo-api-version=2.0.0
 --- !u!4 &1749882911
 Transform:
   m_ObjectHideFlags: 0

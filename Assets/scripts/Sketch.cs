@@ -7,7 +7,7 @@ public class Sketch : MonoBehaviour
     public TextMesh nText = new TextMesh();
     public GameObject Sphere;
     // Put your URL here
-    public string _WebsiteURL = "http://ksis000lab2.azurewebsites.net/tables/WaterPollutionReading?zumo-api-version=2.0.0";
+    public string _WebsiteURL = "http://ksis000lab2.azurewebsites.net/tables/TreeSurvey?zumo-api-version=2.0.0";
 
     void Start()
     {
@@ -23,14 +23,14 @@ public class Sketch : MonoBehaviour
         }
 
         //We can now deserialize into an array of objects - in this case the class we created. The deserializer is smart enough to instantiate all the classes and populate the variables based on column name.
-        WaterPollutionReading[] pollution = JsonReader.Deserialize<WaterPollutionReading[]>(jsonResponse);
+        TreeSurvey[] treeSurvey = JsonReader.Deserialize<TreeSurvey[]>(jsonResponse);
 
-        int totalRows = pollution.Length;
+        int totalRows = treeSurvey.Length;
         Debug.Log("total row" + totalRows);
 
 
         //We can now loop through the array of objects and access each object individually
-        foreach (WaterPollutionReading row in pollution)
+        foreach (TreeSurvey row in treeSurvey)
         {
 
 
@@ -38,7 +38,7 @@ public class Sketch : MonoBehaviour
             float y = float.Parse(row.Y, CultureInfo.InvariantCulture.NumberFormat);
             float z = float.Parse(row.Z, CultureInfo.InvariantCulture.NumberFormat);
             string location = row.Location;
-            int id = int.Parse(row.ReadingID);
+            int id = int.Parse(row.TreeID);
             //Color colour = Color.white;
 
 
